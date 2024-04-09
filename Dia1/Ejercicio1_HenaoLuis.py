@@ -74,16 +74,33 @@ for a in colores:
 
 
 #Funciones (4 Tipos)
+#sin parametros y sin retornos
 
 def funcion1():
     print("mi nombre es luis")
 
 funcion1()
-
+#con parametros y sin retorno
 def funcion2(c):
     print (c + " XD")
 
 funcion2("holaaa")
+#si parametros y con retorno
+def funcion3():
+    resul=4*5
+    return resul
+
+resul = funcion3()
+print (resul)
+
+#con parametros y con retorno
+
+def funcion3(x, y):
+    resul=x*y
+    return resul
+
+resul = funcion3(6, 9)
+print (resul)
 
 
-#desarrollado por luis Henao cc 1093904929
+#Desarrollado por luis Henao c.c.: 1093904929
