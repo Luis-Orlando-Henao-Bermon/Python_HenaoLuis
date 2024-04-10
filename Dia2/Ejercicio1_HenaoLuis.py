@@ -7,24 +7,28 @@ print ("Bienbenido te explicare la naturaleza de la secuencia de Fibonacci\nEn m
 
 xd=True
 while xd==True:
-    n=int(input("Ingresa un numero y te mostrare la secuecia hasta ese termino\n"))
+    num=int(input("Ingresa un numero y te mostrare la secuecia hasta ese valor\n"))
 
-    a=0
+    a=0 #primero asignamos los valores de los primeros 2 numeros 
     b=1
-    
-    hola=True
-    for i in range(n)
-        x=0
-        c=b+a
-        if c<99999999999 :
-
-            a=b
-            b=c
-            x=x+1
+    num=num-2 #se le resta 2 a num ya que  el ciclo empieza desde el tercer valor de la secuencia Fibonacci lo que significa que hay 2 mas atras y por eso se le resta 2
+    print(a) #mostramos los primeros 2 valores de la secuencia 
+    print(b)
+    for i in range(0, num):#el ciclo se hace desde el puesto 0 hasta el puesto num que es el ingresado por el usuario y ya se le restaron 2
+        
+        c=b+a #hacemos la suma de a + b
+        if c<99999999999 : #si la secuencia supera los 11 terminos se acaba la secuencia (asi me lo explicaron)
+            print (c) #se escribe la suma 
+            a=b #se reemplaza a por b que es el numero anterior al resultado de la suma que es el nuevo valor de la secuencia
+            b=c #se reemplaza b por c que es la suma de los 2 numeros anteriores
+            
         else:
-            print("solo se escribiran hasta el numero que tenga 11 terminos")
+            print("El siguiente numero supera los  11 terminos") #si la secuencia supuera los 11 terminos le escribo el sigiente mensaje y termino la secuencia 
+            break
             
     
-    h=input("Quieres ingresar otro numero si/no")
+    h=input("Quieres ingresar otro numero si/no\n")#pregunto si quiere ingresar otro numero y si la respuesta es "no" se acaba el programa
     if h=="no":
         xd=False
+
+#Desarrollado por Luis Orlando Henao Bermon c.c.1093904929
