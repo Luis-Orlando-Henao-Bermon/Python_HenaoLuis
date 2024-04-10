@@ -19,7 +19,7 @@ while xd==True:
     if intento<a and x<10:# si el intento es menor al numero a adivinar y lleva menos de 10 intentos muestro el siguiente mensaje:
         print("El numero a adivinar es mayor")
 
-    if intento>a:# si el intento es menor al numero a adivinar muestro el siguiente mensaje:
+    if intento>a and x<10:# si el intento es menor al numero a adivinar muestro el siguiente mensaje:
         print("El numero a adivinar es menor")
 
     if intento==a:# si el intento es menor al numero a adivinar muestro el siguiente mensaje:
