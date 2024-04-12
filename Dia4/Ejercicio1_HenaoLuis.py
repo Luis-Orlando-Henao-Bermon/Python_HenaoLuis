@@ -70,3 +70,5 @@ while booll==True:
     else:
         booll=False
 calculo(n) #se llama la funcion  que me cuenta las monedas y me diga cuantas se necesitas de cada 1 y la suma de todas las monedas
+
+#Desarrolado por Luis Orlando Henao Bermon c.c. 1093904929
