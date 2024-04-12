@@ -11,32 +11,43 @@
 #Si elige obtener información adicional debe arrojar una explicación de los números primos y el nombre del autor del aplicativo.
 
 
-#2. Implementar un generador de contraseñas seguras que permite al usuario especificar la longitud de la contraseña y decidir si desea incluir mayúsculas, minúsculas, 
-#caracteres alfanuméricos y símbolos. La generación de contraseñas se realiza a través de una función que toma la longitud y las preferencias del usuario y devuelve una 
-#contraseña segura. El programa ofrece un menú interactivo para probar el generador de contraseñas y permite al usuario realizar múltiples solicitudes.
-
-
-#Al inicio, el programa dará la bienvenida y proporcionará una descripción del generador de contraseñas seguras.
-#Presentará un menú con opciones numeradas para que el usuario pueda elegir la longitud de la contraseña, incluir mayúsculas, minúsculas, caracteres alfanuméricos y símbolos.
-#Utilizará una función para generar la contraseña según las preferencias del usuario.
-#Mostrará la contraseña generada y preguntará si el usuario desea generar otra contraseña.
-#Si el usuario decide salir, se despedirá y el programa se cerrará.
-#Se manejarán casos de entrada no válida, como letras en lugar de números para la longitud de la contraseña.
-
-def numeroPrimo(n):
-    if n%2==0:
+from os import system
+def numeroPrimo(a): #hago una funcion para que divida el numero ingresado en todas las diviciones desde el 1 hasta ese numero y cada vez que el residuo sea 0 sume 1 al contador
+    x=0
+    for i in range(1, a+1): #se empieza desde 1 porque si se empezara desde 0 se dividira por cero y esa operacion da infinito por lo tanto empieza por 1 y hasta el numero ingresado +1 ya que pues si empieza desde 1 hay que sumarle 1 para que haga todos los numeros
+        if a%i==0:
+            x=x+1
+        
+    if x==2: #si solo hay 2 en el contador el numero es primo de lo contrario no lo es
         print("El numero ingresado es primo")
     else:
         print("El numero ingresado no es primo")
 
-def menu():
-    print("Menu de opciones\n1. Verificar numero\n2. Detener el programa\n3. Obtener mas informacion\nEscoge una opcion\n")
+def menu(): #Esta es una funcion para que me escriba el menu
+    print("Bienvenido\nMenu de opciones\n1. Verificar numero\n2. Detener el programa\n3. Obtener mas informacion\nEscoge una opcion")
 
-menu
-n=input()
+menu()
+Opcion=int(input()) #se escribe el menu y se lee la opcion
+booll=True
+while booll==True: #mientras booll sea verdadero se ejecutara el programa 
+    while Opcion>3 or Opcion<1: #ya que en el menu solo hay 3 opciones si la opcion es mayor que 3 y menor que uno le mande un mensaeje
+        Opcion=int(input("Por favor Escribe una opcion valida\n"))
 
-if n>3 and n<1:
-    n=int(input("Por favor Escribe una opcion valida"))
+    if Opcion==1:
+        
+        n=int(input("Ingresa el numero que quieres saber si es primo\n")) #si escoge la opcion 1 pregunta el numero y mira si es primo en la funcion numeroPrimo
+        numeroPrimo(n)
+        menu() #se vuelve a escribir el menu y lee la opcion 
+        Opcion=int(input())
+    
+    if Opcion==2:
+        print("Gracias por usar el programa") #si escoge la opcion 2 le dara las gracias por usar el programa y se cerrara el programa
+        booll=False
 
+    if Opcion==3: #si escoge la opcion 3 dira que es un numero primo y el autor del aplicativo
+        print("Un número primo es aquel que solo es divisible por 1 y por sí mismo\nLuis Henao c.c. 1093904929")
+        menu()
+        Opcion=int(input()) #se vuelve a escribir el menu y lee la opcion 
 
-
+#Desarrolado por Luis Orlando Henao Bermon c.c. 1093904929
+    
