@@ -1,29 +1,17 @@
-numeros=[]
-def separar(a):
-    while a>0:
-        b=a%10
-        numeros.append(b)
-        a=a//10
 
-
-o=int(input())
-while o<0:
-    print("por favor ingrese un numero positivo")
-    o=int(input())
-separar(o)
-x=len(numeros)
-
+datos_crudos = input()
+lista_datos = [int(d) for d in datos_crudos.split()]
+x=len(lista_datos)
 while x>300:
     
     print("Error ingresaste muchos numeros")
-    o=int(input())
-    numeros= []
-    separar(o)
-    x=len(numeros)
+    datos_crudos = input()
+    lista_datos = [int(d) for d in datos_crudos.split()]
+    x=len(lista_datos)
 
     
 listaResuelta= []
-for reps in numeros:
+for reps in lista_datos:
     if reps not in listaResuelta:
         listaResuelta.append(reps)
 
