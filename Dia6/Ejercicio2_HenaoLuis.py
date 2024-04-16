@@ -1,0 +1,1 @@
+x=list(int, input().split)
