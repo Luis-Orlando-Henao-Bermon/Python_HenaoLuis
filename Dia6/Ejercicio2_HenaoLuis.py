@@ -15,3 +15,4 @@ for i in range(len(lista_datos)): #se usan 2 bucles for para que por cada numero
             break
     
 print("[",posicion1[0],",", posicion2[0],"]") #muestras las pociciones de la primera opcion para llegar al objetivo 
+#desarrollado por Luis Orlando Henao Bermon c.c.1093904929

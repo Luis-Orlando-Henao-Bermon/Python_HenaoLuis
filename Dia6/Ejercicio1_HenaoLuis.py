@@ -22,4 +22,4 @@ for i in range(n-1):#se usa el metodo burbuja para ordenar de manera descendente
             listaResuelta[j], listaResuelta[j+1]= listaResuelta[j+1], listaResuelta[j]
 
 print(listaResuelta) #finalmete se escribe la listaResuelta
-#desarrollado por Luis Orlando Henao Bermon
+#desarrollado por Luis Orlando Henao Bermon c.c.1093904929
