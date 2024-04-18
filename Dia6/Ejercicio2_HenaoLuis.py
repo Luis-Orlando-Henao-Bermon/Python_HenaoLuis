@@ -6,6 +6,7 @@ lista_datos = [int(d) for d in datos_crudos.split()] # se pasan los datos de dat
 numsuma=int(input()) #esto es para leer el nummero objetivo que es al sumar dos de la lista
 posicion1= []#se crean listas vacias para guardar todas las opciones posibles que logren el objetivo
 posicion2=[]
+
 for i in range(len(lista_datos)): #se usan 2 bucles for para que por cada numero haga la suma con todos los numeros de la lista
     for a in range(len(lista_datos)):
         if lista_datos[i]+ lista_datos[a]==numsuma: #se mira si el numero i (tomemos como ejemplo la pocicion 0) al sumarse con cada numero de la lista da como resultado el objetivo
