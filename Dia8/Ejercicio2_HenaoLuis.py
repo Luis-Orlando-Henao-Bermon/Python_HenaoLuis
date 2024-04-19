@@ -28,4 +28,4 @@ print("punto d precio por cantidad ordenado de manera decreciente")
 print(sorted(d,reverse=True)) #se usa sorted para ordenar la lista d y se usa el reverse=true para ordenarlos de manera descendente y luego se muestran en pantalla
 
 
-#Desarrollado por Luis Orlando Henao Bermon c.c.1093904929
+#Desarrollado por Luis Orlando Henao Bermon c.c.1093904929 
