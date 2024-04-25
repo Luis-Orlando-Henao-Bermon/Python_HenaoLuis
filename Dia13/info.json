@@ -1,0 +1,64 @@
+[
+    {
+        "id": 1,
+        "grupo": "T2",
+        "estudiantes": [
+            {
+                "id": 2,
+                "nombre": "Jerxon",
+                "apellido": "Correa",
+                "edad": 20,
+                "fechaNacimiento": "11-05-2003",
+                "cedula": 283543721,
+                "email": "jerxon@gmail.com",
+                "github": "github.com"
+            },
+            {
+                "id": 5213153,
+                "nombre": "luis",
+                "apellido": "henao",
+                "edad": 20,
+                "fechaNacimiento": "03-07-2004",
+                "cedula": 10251633541351,
+                "email": "roronoazoro3704@gmail.com",
+                "github": "github.com"
+            },
+            {
+                "id": 352135153,
+                "nombre": "jose",
+                "apellido": "perez",
+                "edad": 26,
+                "fechaNacimiento": "15-11-1999",
+                "cedula": 5102165131,
+                "email": "jose@gmail.com",
+                "github": "github.com"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "grupo": "P1",
+        "estudiantes": [
+            {
+                "id": 1,
+                "nombre": "Andres",
+                "apellido": "Pastrana",
+                "edad": 22,
+                "fechaNacimiento": "10-05-2009",
+                "cedula": 46763453,
+                "email": "andres@gmail.com",
+                "github": "github.com"
+            },
+            {
+                "id": 2,
+                "nombre": "Diego",
+                "apellido": "Correa",
+                "edad": 34,
+                "fechaNacimiento": "15-05-1989",
+                "cedula": 288742431,
+                "email": "diego@gmail.com",
+                "github": "github.com"
+            }
+        ]
+    }
+]
