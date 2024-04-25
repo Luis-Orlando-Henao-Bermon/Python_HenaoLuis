@@ -15,7 +15,7 @@
             "url": "https://api.github.com/repos/mdzhang/scheduling_service"
         },
         "payload": {},
-        "public": true,
+        "public": false,
         "created_at": "2015-01-01T15:40:33Z"
     },
     {
@@ -36,19 +36,5 @@
         "payload": {},
         "public": true,
         "created_at": "2015-01-01T15:50:23Z"
-    },
-    {
-        "type": "PublicEvent",
-        "id": "5435212222565",
-        "actor": {
-            "id": 7,
-            "login": "itadori",
-            "avatar_url": "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2024/02/jujutsu-kaisen-verdadero-poder-yuji-itadori.jpg"
-        },
-        "repo": {
-            "id": 88888888,
-            "name": "galloDePelea"
-        },
-        "public": true
     }
 ]

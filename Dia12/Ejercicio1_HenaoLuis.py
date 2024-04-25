@@ -263,10 +263,10 @@ while bol2==True:#se usa un bucle wile para que se repita el menu cada vez que t
 
                 publicAgregar=input("¿Ahora public es true o false?\n")#Se pregunta si ahora public es true o false, si ingresa una opcion diferente no se hara nada 
                 if publicAgregar=="true":
-                    eventoEnLista[actualizar-1].append({"public":True})
+                    eventoEnLista[actualizar-1][indiceActualizar]["public"]=True
                 
                 elif publicAgregar=="false":
-                    eventoEnLista[actualizar-1].append({"public":False})
+                    eventoEnLista[actualizar-1][indiceActualizar]["public"]=False
                 
                 else:
                     print("Ingresaste una opcion invalida\n")
@@ -467,4 +467,4 @@ with open("MemberEvent.json","w") as file:
 json_PublicEvent=json.dumps(PublicEvent)
 with open("PublicEvent.json","w") as file:
     file.write(json_PublicEvent)
-#Desarrollado por Luis Henao c.c. 1093904929
+#Desarrollado por Luis Henao c.c. 1093904929 
