@@ -39,15 +39,15 @@
     },
     {
         "type": "PublicEvent",
-        "id": 52413541,
+        "id": "5435212222565",
         "actor": {
-            "id": 351389434,
-            "login": "Zukuna",
-            "avatar_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcodigoespagueti.com%2Fnoticias%2Fanime%2Fjujutsu-kaisen-fanart-muestra-ultima-aparicion-sukuna-en-manga%2F&psig=AOvVaw0dAM0uw7TUdoqfjxQIQPD5&ust=1714097053872000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCQ5KKj3IUDFQAAAAAdAAAAABAE"
+            "id": 7,
+            "login": "itadori",
+            "avatar_url": "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2024/02/jujutsu-kaisen-verdadero-poder-yuji-itadori.jpg"
         },
         "repo": {
-            "id": 35413541222,
-            "name": "holi"
+            "id": 88888888,
+            "name": "galloDePelea"
         },
         "public": true
     }

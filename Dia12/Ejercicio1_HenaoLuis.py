@@ -136,13 +136,10 @@ while bol2==True:#se usa un bucle wile para que se repita el menu cada vez que t
         except ValueError:
             agregar=int(input("Ingresa una opcion valida (numero)\n"))
         
-
-        try:#se usa un try por si ingresa algo que no sea un entero, ya que la opcion que se espera es un entero 
-            idAgregar=int(input("ingrese el nuevo id\n"))#se pide el id del nuevo evento
-        except ValueError:
-            idAgregar=int(input("Por favor ingrese un id de solo numeros\n"))
-
+        eventoEnLista[agregar-1].append({"type":eventoEnLista[agregar-1][0]["type"]}) #Con esto se agrega el type al nuevo evento como ya se que evento es el que quiere agregar solo se lo agrego poniendo el type que hay en eventoEnLista en la pocicion agregar-1 (que es el evento que se quiere agregar uno nuevo) y dentro de alli en la pocicion 0 (la posisicon no importa mientras que este en una pocicion que haya en la lista, la pocicion no importa ya que todos los type de la lista son iguales en esa pocicion) 
         
+        idAgregar=input("ingrese el nuevo id\n")#se pide el id del nuevo evento
+        eventoEnLista[agregar-1][len(eventoEnLista[agregar-1])-1].update({"id":idAgregar})#se agrega el id del evento
         print("Ahora agregaremos los datos de actor")
         try:#se usa un try por si ingresa algo que no sea un entero, ya que la opcion que se espera es un entero 
             idActorAgregar=int(input("ingresa el nuevo id de actor\n"))#se pide el nuevo id de actor
@@ -151,6 +148,8 @@ while bol2==True:#se usa un bucle wile para que se repita el menu cada vez que t
 
         loginActorAgregar=input("Ingrese el nuevo login\n")
         avatar_urlActorAgregar=input("ingrese el nuevo avatar url\n")
+
+        eventoEnLista[agregar-1][len(eventoEnLista[agregar-1])-1].update({"actor":{"id":idActorAgregar,"login":loginActorAgregar,"avatar_url":avatar_urlActorAgregar}})#se agrega el id, login y avatar_url en el diccionario de actor que a su vez se agrega en el dicionario del evento al que se le quiere agregar 
         
         print("Ahora agregaremos los datos de repo")
         try:#se usa un try por si ingresa algo que no sea un entero, ya que la opcion que se espera es un entero 
@@ -159,7 +158,7 @@ while bol2==True:#se usa un bucle wile para que se repita el menu cada vez que t
             idRepoAgregar=int(input("ingresa el nuevo id de repo\n"))
         nameRepoAgregar=input("Ingrese el nuevo name de repo\n")
 
-        eventoEnLista[agregar-1].append({"type":eventoEnLista[agregar-1][0]["type"],"id":idAgregar,"actor":{"id":idActorAgregar,"login":loginActorAgregar,"avatar_url":avatar_urlActorAgregar},"repo":{"id":idRepoAgregar,"name":nameRepoAgregar}}) #Con esto se agrega el type al nuevo evento como ya se que evento es el que quiere agregar solo se lo agrego poniendo el type que hay en eventoEnLista en la pocicion agregar-1 (que es el evento que se quiere agregar uno nuevo) y dentro de alli en la pocicion 0 (la posisicon no importa mientras que este en una pocicion que haya en la lista, la pocicion no importa ya que todos los type de la lista son iguales en esa pocicion),se agrega el id del evento, se agrega el id, login y avatar_url en el diccionario de actor que a su vez se agrega en el dicionario del evento al que se le quiere agregar
+        eventoEnLista[agregar-1][len(eventoEnLista[agregar-1])-1].update({"repo":{"id":idRepoAgregar,"name":nameRepoAgregar}})#se agrega el id, name en el diccionario de repo que a su vez se agrega en el dicionario del evento al que se le quiere agregar 
 
         publicAgregar=input("¿El public a agregar es true o false?\n")#Se pregunta si el public a agragar es true o false, si ingresa una opcion diferente se le pedira que la vuelva a ingresar
         if publicAgregar=="true":
